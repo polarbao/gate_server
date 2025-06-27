@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gate_ser", "gate_ser\gate_ser.vcxproj", "{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Debug|x64.ActiveCfg = Debug|x64
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Debug|x64.Build.0 = Debug|x64
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Debug|x86.ActiveCfg = Debug|Win32
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Debug|x86.Build.0 = Debug|Win32
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Release|x64.ActiveCfg = Release|x64
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Release|x64.Build.0 = Release|x64
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Release|x86.ActiveCfg = Release|Win32
+		{BD4B60B1-8EF7-4C4B-B698-5B474D45ADF3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E79CC72-18F2-49E2-83A2-3D349CDD2A61}
+	EndGlobalSection
+EndGlobal
