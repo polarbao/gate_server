@@ -19,7 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\CServer.cpp" />
     <ClCompile Include="..\..\src\gate_ser.cpp" />
+    <ClCompile Include="..\..\src\HttpConnection.cpp" />
+    <ClCompile Include="..\..\src\LoginSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\CServer.h" />
+    <ClInclude Include="..\..\src\global.h" />
+    <ClInclude Include="..\..\src\HttpConnection.h" />
+    <ClInclude Include="..\..\src\LoginSystem.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
