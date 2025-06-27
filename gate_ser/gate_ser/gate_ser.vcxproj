@@ -26,6 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\CServer.h" />
+    <ClInclude Include="..\..\src\CSingleton.h" />
     <ClInclude Include="..\..\src\global.h" />
     <ClInclude Include="..\..\src\HttpConnection.h" />
     <ClInclude Include="..\..\src\LoginSystem.h" />

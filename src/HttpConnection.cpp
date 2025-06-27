@@ -29,15 +29,8 @@ void HttpConnection::Start()
 			catch (std::exception& exp)
 			{
 				std::cout << "exception is " << exp.what() << std::endl;
-			}
-
-
-		
+			}		
 		});
-
-
-
-
 }
 
 
