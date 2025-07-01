@@ -42,10 +42,23 @@ void HttpConnection::CheckDeadline()
 
 void HttpConnection::WriteResponse()
 {
-
+	auto self = shared_from_this();
+	m_response.content_length(m_response.body().size());
+	boost::beast::http::async_write(m_socket, m_response, [self](boost::beast::error_code ec, std::size_t) 
+		{
+			self->m_socket.shutdown(boost::asio::ip::tcp::socket::shutdown_send, ec);
+			self->deadline_.cancel();
+		});
 }
 
 void HttpConnection::HandleReq()
 {
-
+	auto self = shared_from_this();
+	deadline_.async_wait([self](boost::beast::error_code ec) 
+		{
+			if (!ec)
+			{
+				self->m_socket.close(ec);
+			}
+		});
 }

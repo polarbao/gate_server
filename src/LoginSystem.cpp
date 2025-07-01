@@ -27,8 +27,8 @@ bool LoginSystem::HandleGet(std::string path, std::shared_ptr<HttpConnection> co
 		return false;
 	}
 
-	m_get_handlers[path](conn);
-
+	//conn数据类型与handler类型不同
+	//m_get_handlers[path](conn);
 	return true;
 
 }
