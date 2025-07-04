@@ -19,9 +19,14 @@ public:
 
 	~LoginSystem();
 
-	bool HandleGet(std::string path, std::shared_ptr<HttpConnection> conn);
 
 	void RegGet(std::string url, HttpHandle handler);
+
+	void RegPost(std::string url, HttpHandle handler);
+
+	bool HandleGet(std::string path, std::shared_ptr<HttpConnection> conn);
+
+	bool HandlePost(std::string path, std::shared_ptr<HttpConnection> con);
 
 private:
 

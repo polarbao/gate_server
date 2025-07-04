@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\ConfigMgr.cpp" />
     <ClCompile Include="..\..\src\CServer.cpp" />
     <ClCompile Include="..\..\src\gate_ser.cpp" />
     <ClCompile Include="..\..\src\HttpConnection.cpp" />
     <ClCompile Include="..\..\src\LoginSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\ConfigMgr.h" />
     <ClInclude Include="..\..\src\CServer.h" />
     <ClInclude Include="..\..\src\CSingleton.h" />
     <ClInclude Include="..\..\src\global.h" />
@@ -78,6 +80,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />

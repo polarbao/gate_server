@@ -4,6 +4,7 @@
 
 LoginSystem::LoginSystem()
 {
+	//get请求处理
 	RegGet("/get_test", [](std::shared_ptr<HttpConnection> conn)
 		{
 			boost::beast::ostream(conn->m_response.body()) << "recv get_test req" << std::endl;
@@ -16,6 +17,15 @@ LoginSystem::LoginSystem()
 			}
 		
 		});
+	
+	//post请求处理
+	RegPost("/get_varifycode", [](std::shared_ptr<HttpConnection>) 
+		{
+		
+		
+		});
+
+
 
 	// Initialize any necessary resources or state
 }

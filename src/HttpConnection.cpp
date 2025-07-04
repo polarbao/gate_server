@@ -61,11 +61,15 @@ void HttpConnection::HandleReq()
 			}
 		});
 
+// get处理逻辑
 // 	if (m_request.method() != boost::beast::http::verb::get)
 // 	{
 // 		PreParseGetParam();
 // 		bool success = LoginSystem::GetInstance()->HandleGet(m_get_url, shared_from_this());
 // 	}
+
+// post处理逻辑
+
 }
 
 void HttpConnection::PreParseGetParam()
