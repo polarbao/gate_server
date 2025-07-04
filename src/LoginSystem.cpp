@@ -6,7 +6,14 @@ LoginSystem::LoginSystem()
 {
 	RegGet("/get_test", [](std::shared_ptr<HttpConnection> conn)
 		{
-			boost::beast::ostream(conn->m_response.body()) << "recv get_test req";
+			boost::beast::ostream(conn->m_response.body()) << "recv get_test req" << std::endl;
+			int i = 0;
+			for (auto& elem : conn->m_get_params)
+			{
+				i++;
+				boost::beast::ostream(conn->m_response.body()) << "param" << i << "key is " << elem.first;
+				boost::beast::ostream(conn->m_response.body()) << " param" << i << "value is " << elem.second << std::endl;
+			}
 		
 		});
 

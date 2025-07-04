@@ -92,6 +92,30 @@ std::string UrlEncode(const std::string& str)
 	return strTmp;
 }
 
-
+std::string UrlDecode(const std::string& str)
+{
+	std::string strTmp = "";
+	size_t length = str.length();
+	for (size_t i = 0; i < length; ++i)
+	{
+		if (str[i] == '+')
+		{
+			strTmp += ' ';
+		}
+		else if (str[i] == '%')
+		{
+			assert(i + 2 < length);
+			unsigned char high = FromHex((unsigned char)str[++i]);
+			unsigned char low = FromHex((unsigned char)str[++i]);
+			//高位数据左移四位
+			strTmp += high * 16 + low;	
+		}
+		else
+		{
+			strTmp += str[i];
+		}
+	}
+	return strTmp;
+}
 
 
